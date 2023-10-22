@@ -28,7 +28,7 @@ const router = createRouter({
 });
 // 路由前置守卫
 import pinia, { UserStore } from '../store';
-router.beforeEach((to, form, next) => {
+router.beforeEach((to, _form, next) => {
   const userstore = UserStore(pinia)
   if (to.path != '/login') {
     if (userstore.token) {

@@ -15,7 +15,7 @@ export const registerUser = ref<RegisrerUser>({
   email: ''
 })
 // 注册的表单规则
-export const validatePass2 = (rule: any, value: any, callback: any) => {
+export const validatePass2 = (_rule: any, value: any, callback: any) => {
   if (value === '') {
     callback(new Error('请再次输入密码'))
   } else if (value !== registerUser.value.password) {
