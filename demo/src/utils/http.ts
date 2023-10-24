@@ -5,7 +5,7 @@ import pinia, { UserStore } from '../store';
 const userstore = UserStore(pinia)
 const http = axios.create({
   // 根域名
-  baseURL: 'http://127.0.0.1:8888/api/private/v1',
+  baseURL: 'http://47.96.255.64:8889/api/private/v1',
   // 超时时间
   timeout: 50000,
 });
